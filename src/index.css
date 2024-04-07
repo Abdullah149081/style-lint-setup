@@ -1,0 +1,46 @@
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --navbar-background: #fff;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+}
+
+a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
