@@ -58,13 +58,14 @@ const Navbar = () => {
                       <a href="/">Development</a>
                     </li>
                     <li>
-                      <a href="/">
-                        Designing Sector 
-                      </a>
+                      <a href="/">Designing Sector</a>
                     </li>
 
                     <li>
-                      <a href="/"> Call center <img src={downArrow} alt="downArrow" /></a>
+                      <a href="/">
+                        {" "}
+                        Call center <img src={downArrow} alt="downArrow" />
+                      </a>
                       <ul className="sub-dropdown">
                         <li>
                           <a href="/">Call Receiving</a>
@@ -125,7 +126,8 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a href="/">
-                        Development Sector <img src={downArrow} alt="downArrow" />
+                        Development Sector{" "}
+                        <img src={downArrow} alt="downArrow" />
                       </a>
                       <ul className="sub-dropdown">
                         <li>
@@ -155,9 +157,30 @@ const Navbar = () => {
             </div>
           </div>
           {/* button */}
-          <div className="btn-wrap">
-            <button className="btn-primary">Hire Employee</button>
-            <button className="btn-outline">Login/ Signup</button>
+          <div className="btn-wrapper">
+            <div className="menu ">
+              <ul className="drop-menu">
+                <li>
+                  <a href="/" className="btn">
+                    Hire Employee
+                  </a>
+                  <ul className="dropdown">
+                    <li>
+                      <a href="/">Post a Job</a>
+                    </li>
+
+                    <li>
+                      <a href="/">CV Bank</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/" className="btn">
+                    Login/ Signup
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
