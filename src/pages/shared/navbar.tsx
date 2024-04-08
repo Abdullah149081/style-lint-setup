@@ -44,7 +44,7 @@ const Navbar = () => {
 
             {/* menu  */}
             <div className="menu ">
-              <ul>
+              <ul className="drop-menu">
                 <li>
                   <a href="/">Home</a>
                 </li>
@@ -53,6 +53,37 @@ const Navbar = () => {
                     Projects
                     <img src={downArrow} alt="downArrow" />
                   </a>
+                  <ul className="dropdown">
+                    <li>
+                      <a href="/">Development</a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Designing Sector 
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="/"> Call center <img src={downArrow} alt="downArrow" /></a>
+                      <ul className="sub-dropdown">
+                        <li>
+                          <a href="/">Call Receiving</a>
+                        </li>
+                        <li>
+                          <a href="/">New services</a>
+                        </li>
+                        <li>
+                          <a href="/">Fashion Designing</a>
+                        </li>
+                        <li>
+                          <a href="/">Costumer</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Education Training</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="/">
@@ -88,6 +119,31 @@ const Navbar = () => {
                   <a href="/">
                     Jobs <img src={downArrow} alt="downArrow" />
                   </a>
+                  <ul className="dropdown">
+                    <li>
+                      <a href="/">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Development Sector <img src={downArrow} alt="downArrow" />
+                      </a>
+                      <ul className="sub-dropdown">
+                        <li>
+                          <a href="/">Ui Designing</a>
+                        </li>
+                        <li>
+                          <a href="/">Mobile Ui</a>
+                        </li>
+                        <li>
+                          <a href="/">Fashion Designing</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="/"> Sector</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="/">About</a>

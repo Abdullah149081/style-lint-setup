@@ -155,6 +155,7 @@
 }
 
 .menu ul {
+  position: relative;
   display: flex;
   gap: 1.75em;
 
@@ -165,7 +166,7 @@
   }
 }
 
-.menu ul li {
+.menu .drop-menu > li {
   position: relative;
   cursor: pointer;
 
@@ -198,7 +199,6 @@
   left: 0;
   display: none;
   width: 330px;
-  height: 500px;
   background-color: var(--colors-white-white100);
   border: 1px solid var(--border);
   border-radius: 0 0 0 5px;
@@ -249,8 +249,10 @@
   }
 }
 
-.menu .dropdown .sub-dropdown {
+.menu .drop-menu .dropdown .sub-dropdown {
   position: absolute;
+  top: 0;
+  left: calc(100% + 1px);
   display: none;
   width: 647px;
   padding: 40px 0;
@@ -291,8 +293,6 @@
 
 .menu .dropdown li:focus-within .sub-dropdown,
 .menu .dropdown li:hover .sub-dropdown {
-  top: calc(100% - 99px);
-  left: calc(100% - 0.5px);
   display: initial;
 
   @media screen and (width <= 1024px) {
