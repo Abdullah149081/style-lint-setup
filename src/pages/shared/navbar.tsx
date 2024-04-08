@@ -164,15 +164,17 @@ const Navbar = () => {
                   <a href="/" className="btn">
                     Hire Employee
                   </a>
-                  <ul className="dropdown">
-                    <li>
-                      <a href="/">Post a Job</a>
-                    </li>
+                  <div className="btn-dropdown">
+                    <ul className="dropdown">
+                      <li>
+                        <a href="/">Post a Job</a>
+                      </li>
 
-                    <li>
-                      <a href="/">CV Bank</a>
-                    </li>
-                  </ul>
+                      <li>
+                        <a href="/">CV Bank</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <a href="/" className="btn">

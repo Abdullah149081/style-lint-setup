@@ -305,6 +305,7 @@
 .btn-wrapper {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 
   @media screen and (width <= 1024px) {
     flex-direction: column;
@@ -341,6 +342,10 @@
     width: 100%;
     gap: 20px;
   }
+}
+
+.btn-wrapper .menu .drop-menu .btn-dropdown {
+  padding-bottom: 10px;
 }
 
 .btn-wrapper .menu .drop-menu .dropdown {
